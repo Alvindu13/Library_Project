@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library-batch/library-batch.iml" filepath="$PROJECT_DIR$/library-batch/library-batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-clientIHM/library-clientIHM.iml" filepath="$PROJECT_DIR$/library-clientIHM/library-clientIHM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-consumer/library-consumer.iml" filepath="$PROJECT_DIR$/library-consumer/library-consumer.iml" />
+    </modules>
+  </component>
+</project>

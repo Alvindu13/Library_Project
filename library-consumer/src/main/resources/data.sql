@@ -1,0 +1,4 @@
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE ) VALUES (0, 'Babylon', 'Jérémie', 10);
+
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE ) VALUES (1, 'Bleu ciel', 'Eric', 14);
+
