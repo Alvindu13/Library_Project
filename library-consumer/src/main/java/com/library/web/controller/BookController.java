@@ -1,9 +1,12 @@
-package com.library;
+package com.library.web.controller;
 
-import com.library.error.BookNotFoundException;
-import com.library.error.BookUnSupportedFieldPatchException;
+import com.library.dao.model.Book;
+import com.library.dao.repository.BookRepository;
+import com.library.web.exceptions.BookNotFoundException;
+import com.library.web.exceptions.BookUnSupportedFieldPatchException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -81,6 +84,14 @@ public class BookController {
     @DeleteMapping("/books/{id}")
     void deleteBook(@PathVariable Long id) {
         repository.deleteById(id);
+    }
+
+
+    @GetMapping("/books/count")
+    ResponseEntity<String> countBooks() {
+
+        return ResponseEntity.status(HttpStatus.OK)
+                .body("Le nombre de livre est : " +  repository.count());
     }
 
 }

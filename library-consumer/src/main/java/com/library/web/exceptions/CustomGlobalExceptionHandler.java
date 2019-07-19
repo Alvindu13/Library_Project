@@ -1,4 +1,4 @@
-package com.library.error;
+package com.library.web.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

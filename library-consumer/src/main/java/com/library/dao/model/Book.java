@@ -1,4 +1,4 @@
-package com.library;
+package com.library.dao.model;
 
 import lombok.*;
 
