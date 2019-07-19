@@ -5,6 +5,7 @@ import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 
 
 @Data
@@ -20,6 +21,8 @@ public class Book {
     private String author;
     private BigDecimal price;
 
+    //private Long clientId;
+
     //Genre du livre
     private String genre;
 
@@ -29,8 +32,16 @@ public class Book {
     @Column(columnDefinition = "boolean default true")
     private Boolean available;
 
+    @ManyToOne
+    private Client borrower;
 
+    //ou boolean
+    //private int borrowCount;
 
+    /*
+        //Début du prêt
+        private Date borrowDate;
+     */
 
 }
 

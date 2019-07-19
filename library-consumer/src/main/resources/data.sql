@@ -1,4 +1,9 @@
-INSERT INTO BOOK (ID , NAME ,AUTHOR,PRICE, GENRE, QUANTITY ) VALUES (0, 'Babylon', 'Jérémie', 10, 'Policier', 8);
+INSERT INTO CLIENT (ID , NAME) VALUES (1, 'Sherlock');
+
+
+
+
+INSERT INTO BOOK (ID , NAME ,AUTHOR,PRICE, GENRE, QUANTITY, BORROWER_ID ) VALUES (0, 'Babylon', 'Jérémie', 10, 'Policier', 8, 1);
 
 INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (1, 'Bleu ciel', 'Eric', 14, 'Aventure', 2);
 
@@ -7,3 +12,5 @@ INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (2, 'Momy',
 INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (3, 'Titanic', 'Leonardo', 10, 'Drame', 3);
 
 INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (4, 'Sherlock', 'Eldison', 4, 'Policier', 7);
+
+

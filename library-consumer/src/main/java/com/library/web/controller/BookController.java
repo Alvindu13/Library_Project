@@ -4,6 +4,7 @@ import com.library.dao.model.Book;
 import com.library.dao.repository.BookRepository;
 import com.library.web.exceptions.BookNotFoundException;
 import com.library.web.exceptions.BookUnSupportedFieldPatchException;
+import com.library.web.model.Count;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -91,10 +92,8 @@ public class BookController {
 
 
     @GetMapping("/books/count")
-    ResponseEntity<String> countBooks() {
-
-        return ResponseEntity.status(HttpStatus.OK)
-                .body("Le nombre de livre est : " +  repository.count());
+    Count countBooks() {
+        return new Count(repository.count());
     }
 
 }
