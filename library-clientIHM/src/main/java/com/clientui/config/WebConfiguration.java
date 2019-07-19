@@ -1,4 +1,4 @@
-package com.clientui.config;
+/*package com.clientui.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -20,4 +20,4 @@ public class WebConfiguration implements WebMvcConfigurer {
         return messageSource;
     }
 
-}
+}*/
