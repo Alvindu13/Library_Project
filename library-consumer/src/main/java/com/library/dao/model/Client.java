@@ -10,14 +10,17 @@ import java.util.Collection;
 import java.util.List;
 
 
-@Data
 @Entity
 public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "firstname")
     private String firstName;
+
+    @Column(name = "lastname")
     private String lastName;
     private String mail;
     private String encrytedPassword;
@@ -73,6 +76,14 @@ public class Client {
         this.encrytedPassword = encrytedPassword;
     }
 
-    /*@OneToMany
-    private List<Book> books;*/
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", mail='" + mail + '\'' +
+                ", encrytedPassword='" + encrytedPassword + '\'' +
+                '}';
+    }
 }

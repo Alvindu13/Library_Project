@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Profile;
 
 import java.math.BigDecimal;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {
+        org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class}
+        )
 public class StartBookApplication {
 
     // start everything

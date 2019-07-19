@@ -1,12 +1,12 @@
 
 --------------------------
---user_escalad_role--
+--CLIENT--
 --------------------------
-INSERT INTO CLIENT (ID, NAME) VALUES (1, 'Jonas');
-INSERT INTO CLIENT (ID, NAME) VALUES (2, 'Romain');
+INSERT INTO CLIENT (ID, FIRSTNAME, LASTNAME, MAIL) VALUES (1, 'Jonas', 'Brother', 'alcaraz.jeremie@hotmail.fr');
+INSERT INTO CLIENT (ID, FIRSTNAME, LASTNAME, MAIL) VALUES (2, 'Romain', 'Test', 'alf@gmail.com');
 
 --------------------------
---user_escalad_role--
+--BOOK--
 --------------------------
 INSERT INTO BOOK (ID , NAME ,AUTHOR,PRICE, GENRE, QUANTITY, BORROWER_ID ) VALUES (1, 'Babylon', 'Jérémie', 10, 'Policier', 8, 1);
 INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY, BORROWER_ID) VALUES (2, 'Bleu ciel', 'Eric', 14, 'Aventure', 2, 1);
