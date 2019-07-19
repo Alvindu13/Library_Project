@@ -21,8 +21,6 @@ public class Book {
     private String author;
     private BigDecimal price;
 
-    //private Long clientId;
-
     //Genre du livre
     private String genre;
 
@@ -34,6 +32,8 @@ public class Book {
 
     @ManyToOne
     private Client borrower;
+
+
 
     //ou boolean
     //private int borrowCount;
