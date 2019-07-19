@@ -3,6 +3,7 @@ package com.library.web.controller;
 import com.library.dao.model.Book;
 import com.library.dao.model.Client;
 import com.library.dao.repository.ClientRepository;
+import com.library.svc.contracts.ClientSvc;
 import com.library.web.exceptions.BookNotFoundException;
 import com.library.web.exceptions.ClientNofFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,10 @@ public class ClientController {
 
     @Autowired
     ClientRepository repository;
+
+
+    @Autowired
+    ClientSvc svc;
 
     // Find
     @GetMapping("/clients")
