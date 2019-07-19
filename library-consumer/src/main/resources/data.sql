@@ -1,4 +1,9 @@
-INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE ) VALUES (0, 'Babylon', 'Jérémie', 10);
+INSERT INTO BOOK (ID , NAME ,AUTHOR,PRICE, GENRE, QUANTITY ) VALUES (0, 'Babylon', 'Jérémie', 10, 'Policier', 8);
 
-INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE ) VALUES (1, 'Bleu ciel', 'Eric', 14);
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (1, 'Bleu ciel', 'Eric', 14, 'Aventure', 2);
 
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (2, 'Momy', 'Rams', 19.99, 'Action', 1);
+
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (3, 'Titanic', 'Leonardo', 10, 'Drame', 3);
+
+INSERT INTO BOOK (ID , NAME ,AUTHOR ,PRICE, GENRE, QUANTITY ) VALUES (4, 'Sherlock', 'Eldison', 4, 'Policier', 7);

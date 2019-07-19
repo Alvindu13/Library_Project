@@ -49,6 +49,9 @@ public class BookController {
                     x.setName(newBook.getName());
                     x.setAuthor(newBook.getAuthor());
                     x.setPrice(newBook.getPrice());
+                    x.setGenre(newBook.getGenre());
+                    x.setQuantity(newBook.getQuantity());
+                    x.setAvailable(newBook.getAvailable());
                     return repository.save(x);
                 })
                 .orElseGet(() -> {

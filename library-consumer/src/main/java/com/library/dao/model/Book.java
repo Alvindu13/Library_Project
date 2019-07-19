@@ -1,6 +1,7 @@
 package com.library.dao.model;
 
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -18,6 +19,16 @@ public class Book {
     private String name;
     private String author;
     private BigDecimal price;
+
+    //Genre du livre
+    private String genre;
+
+    //Nombre d'exemplaires
+    private Long quantity;
+
+    @Column(columnDefinition = "boolean default true")
+    private Boolean available;
+
 
 
 
