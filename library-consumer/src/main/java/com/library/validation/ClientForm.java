@@ -1,18 +1,13 @@
-package com.library.dao.model;
+package com.library.validation;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import javax.persistence.*;
-import java.util.Collection;
-import java.util.List;
-
-
-@Data
 @Entity
-public class Client {
+public class ClientForm {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,14 +18,19 @@ public class Client {
     private String encrytedPassword;
 
 
-    public Client() {
+    private String password;
+    private String confirmPassword;
+
+    public ClientForm() {
     }
 
-    public Client(String firstName, String lastName, String mail, String encrytedPassword) {
+    public ClientForm(String firstName, String lastName, String mail, String encrytedPassword, String password, String confirmPassword) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.mail = mail;
         this.encrytedPassword = encrytedPassword;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
     }
 
     public Long getId() {
@@ -71,6 +71,22 @@ public class Client {
 
     public void setEncrytedPassword(String encrytedPassword) {
         this.encrytedPassword = encrytedPassword;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     /*@OneToMany
