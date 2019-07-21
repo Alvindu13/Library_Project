@@ -9,13 +9,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ClientController {
 
 
-
-
     /**
      * Page d'accueil du web site
      * @return
      */
-    @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/"}, method = RequestMethod.GET)
     public String index(Model model) {
 
         return "Accueil";

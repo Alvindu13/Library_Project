@@ -33,10 +33,12 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- hot swapping, enable live reload -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
+
         </dependency>
 
         <!-- spring mvc, rest -->
@@ -113,10 +115,11 @@
         <plugins>
 
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <addResources>true</addResources>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <excludeDevtools>false</excludeDevtools>
+                        <addResources>true</addResources>
                 </configuration>
             </plugin>
 
@@ -126,7 +129,15 @@
                 <version>2.22.0</version>
             </plugin>
 
+
+            <plugin>
+                <!-- first, compile all we need -->
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+            </plugin>
+
         </plugins>
+
 
     </build>
 </project>
